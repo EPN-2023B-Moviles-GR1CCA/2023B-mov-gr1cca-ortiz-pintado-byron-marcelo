@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto_saludo">Hola Byron Land Spanish</string>
+    <color name="Color1">#3F51B5</color>
+    <color name="Color2">#D4AF37</color>
+</resources>
