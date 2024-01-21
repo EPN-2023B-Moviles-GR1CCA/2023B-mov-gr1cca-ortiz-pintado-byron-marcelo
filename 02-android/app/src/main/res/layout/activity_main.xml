@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colores2">
+    android:background="@color/Color1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_layout_main"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:background="@color/Color2"
@@ -14,14 +15,91 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_saludo"
             android:textColor="@color/Color1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.297" />
+            app:layout_constraintVertical_bias="0.707" />
+
+        <Button
+            android:id="@+id/btn_ir_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:text="L. View"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ciclo_vida"
+            app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida" />
+
+        <Button
+            android:id="@+id/btn_ciclo_vida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:text="C.Vida"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            tools:layout_editor_absoluteX="160dp" />
+
+        <Button
+            android:id="@+id/btn_ir_intent_implicito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:text="I. IMPLICITO"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ir_list_view"
+            app:layout_constraintEnd_toEndOf="@+id/btn_ir_list_view"
+            app:layout_constraintStart_toStartOf="@+id/btn_ir_list_view" />
+
+        <Button
+            android:id="@+id/btn_ir_intent_explicito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="I. EXPLICITO"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ir_intent_implicito"
+            app:layout_constraintEnd_toEndOf="@+id/btn_ir_intent_implicito"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_ir_intent_implicito" />
+
+        <Button
+            android:id="@+id/btn_sqlite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:text="Sqlite"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_ciclo_vida"
+            app:layout_constraintStart_toEndOf="@+id/btn_ciclo_vida"
+            app:layout_constraintTop_toTopOf="@+id/btn_ciclo_vida"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_revcycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:text="R. View"
+            app:layout_constraintBottom_toTopOf="@+id/btn_sqlite"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sqlite"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_sqlite" />
+
+        <Button
+            android:id="@+id/btn_google_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:text="G. MAPS"
+            app:layout_constraintBottom_toTopOf="@+id/btn_revcycler_view"
+            app:layout_constraintEnd_toEndOf="@+id/btn_revcycler_view"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_revcycler_view" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

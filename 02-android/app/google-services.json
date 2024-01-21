@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19738691400",
+    "project_id": "b2023-gr1acc-bmop",
+    "storage_bucket": "b2023-gr1acc-bmop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19738691400:android:a526e27b96dc50393d957d",
+        "android_client_info": {
+          "package_name": "com.example.gr1accbmop2023b"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB60tbbZKhJ6JND0Tp6YDGq57lI3MjgkMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

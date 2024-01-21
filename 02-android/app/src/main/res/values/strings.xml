@@ -1,1 +1,13 @@
-<resources></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="texto_saludo">Hola Byron</string>
+    <color name="Color1">#800080</color>
+    <color name="Color2">#D4AF37</color>
+
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
+</resources>
