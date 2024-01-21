@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nombre del Cliente -->
+        <TextView
+            android:id="@+id/tvNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_cliente"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <!-- Documento de Identidad -->
+        <TextView
+            android:id="@+id/tvDocumentoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/documento_identidad"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <!-- Fecha Check-In -->
+        <TextView
+            android:id="@+id/tvFechaCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_checkin"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <!-- Fecha Check-Out -->
+        <TextView
+            android:id="@+id/tvFechaCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_checkout"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <!-- Número de Teléfono -->
+        <TextView
+            android:id="@+id/tvNumeroTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_telefono"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+
+    </LinearLayout>
+</ScrollView>

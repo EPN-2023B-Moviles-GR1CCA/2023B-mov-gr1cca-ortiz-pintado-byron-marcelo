@@ -4,15 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@android:color/white">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHabitaciones"
+        android:layout_width="346dp"
+        android:layout_height="525dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregarHabitacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/btnAgregarHabitacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="68dp"
+        android:text="@string/agregar_habitacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgregarCliente"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/agregar_cliente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarHabitacion" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="193dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="28dp"
+        android:text="HABITACIÓN - CLIENTE HOTEL"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewHabitaciones"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewHabitaciones" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
