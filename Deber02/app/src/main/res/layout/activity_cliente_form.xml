@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/nombre_cliente_hint"
+        android:inputType="textPersonName"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/etDocumentoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/documento_identidad_hint"
+        android:inputType="number"
+        android:autofillHints="creditCardNumber" />
+
+    <EditText
+        android:id="@+id/etFechaCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/fecha_check_in_hint"
+        android:inputType="date"
+        android:autofillHints="date" />
+
+    <EditText
+        android:id="@+id/etFechaCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/fecha_check_out_hint"
+        android:inputType="date"
+        android:autofillHints="date" />
+
+    <EditText
+        android:id="@+id/etNumeroTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/numero_telefono_hint"
+        android:inputType="phone"
+        android:autofillHints="phone" />
+
+
+    <Button
+        android:id="@+id/btnGuardarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/guardar_cliente"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

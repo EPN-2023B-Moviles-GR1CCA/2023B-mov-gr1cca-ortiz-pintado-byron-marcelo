@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Examen1b</string>
+    <string name="iniciar_aplicacion">Agregar Habitación</string>
+    <string name="nombre_cliente_hint">Nombre del Cliente</string>
+    <string name="documento_identidad_hint">Cedula de Identidad</string>
+    <string name="fecha_check_in_hint">Fecha de Check-In (yyyy-MM-dd)</string>
+    <string name="fecha_check_out_hint">Fecha de Check-Out (yyyy-MM-dd)</string>
+    <string name="numero_telefono_hint">Número de Teléfono</string>
+    <string name="guardar_cliente">Guardar Cliente</string>
+    <string name="nombre_habitacion_hint">Nombre de la Habitación</string>
+    <string name="capacidad_habitacion_hint">Capacidad</string>
+    <string name="precio_noche_hint">Precio por Noche</string>
+    <string name="disponible">Disponible</string>
+    <string name="guardar">Guardar</string>
+    <!-- Strings para detalles de habitación -->
+    <string name="capacidad_format">Capacidad: %1$d</string>
+    <string name="precio_noche_format">Precio por noche: %1$.2f</string>
+    <string name="no_disponible">No disponible</string>
+    <string name="nombre_habitacion">Nombre de la Habitación</string>
+    <string name="eliminar">Eliminar</string>
+
+    <string name="nombre_cliente">Nombre Cliente</string>
+    <string name="capacidad_habitacion">Capacidad</string>
+    <string name="precio_noche">Precio por Noche</string>
+    <string name="disponibilidad">Disponibilidad</string>
+
+    <string name="documento_identidad">Documento de Identidad</string>
+    <string name="fecha_checkin">Fecha Check-In</string>
+    <string name="fecha_checkout">Fecha Check-Out</string>
+    <string name="numero_telefono">Número de Teléfono</string>
+
+    <string name="agregar_cliente">Agregar Cliente</string>
+    <string name="editar">Editar </string>
+    <string name="agregar_habitacion">Agregar Habitación</string>
+        <!-- ... otros strings ... -->
+    <string name="actualizar_habitacion">Actualizar Habitación</string>
+
+
+</resources>
