@@ -1,26 +1,17 @@
-package com.example.gr1accbmop2023b
+package com.example.gr1accvaes2023b
 
+import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.app.Activity
 import android.provider.ContactsContract
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
-import com.google.android.material.snackbar.Snackbar
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.gr1accbmop2023b.ui.theme.Gr1accbmop2023bTheme
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
+
     val callbackContenidoIntentExplicito =
         registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
@@ -76,7 +67,8 @@ class MainActivity : AppCompatActivity() {
         // Base de datos sqlite
         EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
 
-        val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida)
+        val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida2)
+
         botonCicloVida
             .setOnClickListener {
                 irActividad(ACicloVida::class.java)
@@ -124,6 +116,21 @@ class MainActivity : AppCompatActivity() {
                 irActividad(GGoogleMapsActivity::class.java)
             }
 
+
+        val botonFirebaseUI = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonFirebaseUI
+            .setOnClickListener {
+                irActividad(HFirebaseUIAuth::class.java)
+            }
+
+
+
+        val botonFirestore = findViewById<Button>(R.id.btn_intent_firestore)
+        botonFirestore
+            .setOnClickListener {
+                irActividad(IFirestore::class.java)
+            }
+
     } // Termina onCreate
     fun abrirActividadConParametros(
         clase: Class<*>
@@ -135,7 +142,6 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("edad", 34)
         callbackContenidoIntentExplicito.launch(intentExplicito)
     }
-
     fun irActividad(
         clase: Class<*>
     ){
